@@ -6,7 +6,7 @@ import NewToDoForm from './NewToDoForm';
 
 
 const ToDoList = () => {
-  const initalState = JSON.parse(localStorage.getItem("toDoList"));
+  const initalState = JSON.parse(localStorage.getItem("toDoList")) || [];
   const [toDoList, setToDoList] = useState(initalState);
   useEffect(() => localStorage.setItem("toDoList", JSON.stringify(toDoList)), [toDoList]);
 
@@ -32,7 +32,7 @@ const ToDoList = () => {
   }
 
   const addToDo = (taskObj) => {
-    setToDoList([...toDoList, {...taskObj, complete: false, toEdit: false, id: uuid()}]);
+    setToDoList([...toDoList, {...taskObj, complete: false, fadeout: false, toEdit: false, id: uuid()}]);
 
     // localStorage.setItem("toDoList", JSON.stringify(toDoList));
   }
