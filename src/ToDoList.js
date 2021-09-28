@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { v4 as uuid } from 'uuid';
 import './ToDoList.css';
 import ToDo from './ToDo';
@@ -6,7 +6,9 @@ import NewToDoForm from './NewToDoForm';
 
 
 const ToDoList = () => {
-  const [toDoList, setToDoList] = useState([]);
+  const initalState = JSON.parse(localStorage.getItem("toDoList"));
+  const [toDoList, setToDoList] = useState(initalState);
+  useEffect(() => localStorage.setItem("toDoList", JSON.stringify(toDoList)), [toDoList]);
 
   const renderToDos = () => (
     toDoList.map(toDo => (
@@ -31,6 +33,8 @@ const ToDoList = () => {
 
   const addToDo = (taskObj) => {
     setToDoList([...toDoList, {...taskObj, complete: false, toEdit: false, id: uuid()}]);
+
+    // localStorage.setItem("toDoList", JSON.stringify(toDoList));
   }
 
   const toggleProp = (id, prop) => {
