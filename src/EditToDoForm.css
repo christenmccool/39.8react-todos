@@ -1,0 +1,25 @@
+.EditToDoForm {
+  background-color: lightgrey;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto ;
+  border-radius: 5px;
+}
+
+
+.EditToDoForm-label {
+  margin-right: 10px;
+}
+
+.EditToDoForm-priority {
+  border: none;
+  margin: 10px auto 0 auto;
+}
+
+.EditToDoForm-btn {
+  margin-left: 10px;
+  border: none;
+  background-color: darkgrey;
+  color: black;
+  border-weight: bold;
+}

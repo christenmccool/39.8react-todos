@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`if matches snapshot 1`] = `
+<DocumentFragment>
+  <form
+    class="NewToDoForm"
+  >
+    <label
+      class="NewToDoForm-label"
+      for="task"
+    >
+      New task
+    </label>
+    <input
+      id="task"
+      name="task"
+      type="text"
+      value=""
+    />
+    <fieldset
+      class="NewToDoForm-priority"
+    >
+      <legend>
+        Priority
+      </legend>
+      <input
+        id="choice3"
+        name="priority"
+        type="radio"
+        value="low"
+      />
+      <label
+        class="NewToDoForm-label"
+        for="choice3"
+      >
+        Low
+      </label>
+      <input
+        checked=""
+        id="choice2"
+        name="priority"
+        type="radio"
+        value="medium"
+      />
+      <label
+        class="NewToDoForm-label"
+        for="choice2"
+      >
+        Medium
+      </label>
+      <input
+        id="choice1"
+        name="priority"
+        type="radio"
+        value="high"
+      />
+      <label
+        class="NewToDoForm-label"
+        for="choice1"
+      >
+        High
+      </label>
+    </fieldset>
+    <button
+      class="NewToDoForm-btn"
+    >
+      Add
+    </button>
+  </form>
+</DocumentFragment>
+`;

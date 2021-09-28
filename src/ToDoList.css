@@ -1,0 +1,11 @@
+.ToDoList {
+  text-align: center;
+}
+
+.ToDoList-title {
+  margin: 20px auto 20px auto;
+}
+
+.ToDoList-newform {
+  margin-bottom: 40px;
+} 

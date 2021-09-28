@@ -1,0 +1,66 @@
+.ToDo {
+  margin-bottom: 30px;
+}
+
+.ToDo-main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.ToDo-task {
+  margin: 2px 10px;
+}
+
+.ToDo-task-complete {
+  text-decoration: line-through;
+  color: darkgrey;
+}
+
+.ToDo-task-high {
+  font-weight: bold;
+}
+
+.ToDo-task-low {
+  font-weight: lighter;
+}
+
+.ToDo-delete-btn, .ToDo-edit-btn, .ToDo-complete-btn {
+  border-radius: 5px;
+  padding: 1px 8px;
+}
+
+.ToDo-complete-btn {
+  border: 1px solid darkgrey;
+  color: darkgrey;
+  background-color: white;
+  color: black;
+  border-weight: bold;
+}
+
+.ToDo-delete-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  border-weight: bold;
+}
+
+.ToDo-edit-btn {
+  border: none;
+  background-color: darkgrey;
+  color: black;
+  border-weight: bold;
+}
+
+.ToDo-fadeout{
+  animation: fadeout 2s linear forwards;
+}
+  
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+

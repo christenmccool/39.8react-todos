@@ -1,0 +1,20 @@
+.NewToDoForm {
+  border: 1px dashed black;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto ;
+  border-radius: 5px;
+}
+
+.NewToDoForm-label {
+  margin-right: 10px;
+}
+
+.NewToDoForm-priority {
+  border: none;
+  margin: 10px auto 0 auto;
+}
+
+.NewToDoForm-btn {
+  margin-left: 10px;
+}
